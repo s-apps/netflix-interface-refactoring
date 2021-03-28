@@ -19,6 +19,7 @@ body {
 header {
     position: fixed;
     top: 0;
+    z-index: 2;
     background-color: var(--preto);
     width: 100%;
 }
@@ -132,7 +133,7 @@ footer .container ul li {
     top: 10%;
     right: 5%;
     display: none;
-    z-index: 99;
+    z-index: 1;
 }
 
 .fechar-trailer {
