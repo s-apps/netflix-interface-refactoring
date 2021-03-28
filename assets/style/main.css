@@ -1,0 +1,146 @@
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', Times, serif;
+    -webkit-font-smoothing: antialiased;
+    background: var(--preto);
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: var(--preto);
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;/*flex por padrão já possui direction igual a row*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+.filmes-principais {
+    font-size: 16px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.filmes-principais .descricao {
+    margin: 10px 0 10px 0;
+}
+
+.filmes-principais .titulo {
+    margin-top: 20%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao:focus {
+    outline: none;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filmes-principais .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 8px;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    outline: none;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 15% 10px 15%;
+}
+
+footer .container ul {
+    list-style-type: none;
+}
+
+footer .container ul li {
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+
+.trailer {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    display: none;
+    z-index: 99;
+}
+
+.fechar-trailer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fechar-trailer:hover {
+    cursor: pointer;
+}
